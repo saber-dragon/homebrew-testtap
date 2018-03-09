@@ -8,7 +8,7 @@
   sha256 "12767cce8a379700e75fb1dfd62290c49e4243de2fce2289efc5d4524088bfd1"
    # depends_on "cmake" => :build
    def install
-    system "make", "install" # if this fails, try separate make/make install steps
+    bin.install "hello.py" # if this fails, try separate make/make install steps
   end
    test do
     system "false"
